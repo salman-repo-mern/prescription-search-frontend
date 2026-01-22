@@ -9,13 +9,13 @@ function SearchBox({ setResult }) {
 
   const handleSearch = async () => {
     if (!disease.trim()) return;
-
+    
     setLoading(true);
     setError("");
     setResult(null);
 
-    try {
-      const res = await fetch("http://localhost:5000/classify", {
+    try { 
+      const res = await fetch("https://prescription-search-backend.onrender.com/classify", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

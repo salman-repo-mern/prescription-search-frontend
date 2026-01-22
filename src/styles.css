@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  height: 100vh;
+}
+
+.app {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.error {
+  margin-top: 10px;
+  color: #d32f2f;
+  font-size: 14px;
+}
+
+.title {
+  color: #0d47a1;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #1976d2;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-box button:hover {
+  background: #0d47a1;
+}
+
+.result-card {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9fbff;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.badge.lab {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.badge.speciality {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.disclaimer {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #df1c1c;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.search-box button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}

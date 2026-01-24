@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="title">Search Speciality of NCH</h1>
+      <h1 className="title">Search Speciality</h1>
       <p className="subtitle">
         Disease → Lab or Speciality Classification
       </p>
@@ -20,6 +20,9 @@ function App() {
       <p className="disclaimer">
         * This tool provides informational of the Speciality under the Disease comes.
       </p>
+      <div className="credit">
+        Designed & Developed <br /> By <span> Salman</span>
+      </div>
     </div>
   );
 }

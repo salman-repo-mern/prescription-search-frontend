@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background: linear-gradient(135deg, #e3f2fd, #ffffff);
-  height: 100vh;
+  height: 90vh;
 }
 
 .app {
@@ -68,7 +70,7 @@ body {
   display: inline-block;
   padding: 6px 14px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -84,7 +86,7 @@ body {
 }
 
 .value {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   color: #333;
 }
@@ -103,4 +105,27 @@ body {
 .search-box button:disabled {
   background: #b0bec5;
   cursor: not-allowed;
+}
+
+
+.credit {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+  position: fixed;
+  bottom: 12px;
+  right: 16px;
+  font-size: 22px;
+  color: #878585;
+  padding: 6px 10px;
+  
+}
+
+.credit span {
+background: linear-gradient(90deg, rgb(0, 128, 255));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 28px;  
 }
